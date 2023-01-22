@@ -16,8 +16,6 @@
     }
 
     .js-video-container {
-      /*width: 100%;*/
-      /*height: 100%;*/
       flex-grow: 1;
     }
 
@@ -37,11 +35,31 @@
       cursor: pointer
     }
 
+    .js-volume-button {
+      background-color: black;
+      border-style: none;
+      cursor: pointer
+    }
+
+    .js-mute-button {
+      background-color: black;
+      border-style: none;
+      cursor: pointer
+    }
+
     .fa-play {
       color: white;
     }
 
     .fa-pause {
+      color: white;
+    }
+
+    .fa-volume-up {
+      color: white;
+    }
+
+    .fa-volume-off {
       color: white;
     }
 
@@ -59,15 +77,15 @@
   <div class="js-video-container"></div>
   <div class="buttons">
     <button class="js-play-button"><i class="fa fa-play" aria-hidden="False"></i></button>
-    <button class="js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
-    <!--      <button class="js-volume-button" hidden>Volume</button>-->
-    <!--      <button class="js-mute-button" >Mute</button>-->
+    <button class="js-pause-button"><i class="fa fa-pause" aria-hidden="true"></i></button>
+    <button class="js-volume-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+    <button class="js-mute-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
     <!--      <button class="js-fullscreen-button" >Fullscreen</button>-->
   </div>
-<!--  <div style="color: white;">-->
-<!--    <span class="js-current-time"></span>-->
-<!--    <span class="js-duration"></span>-->
-<!--  </div>-->
+  <!--  <div style="color: white;">-->
+  <!--    <span class="js-current-time"></span>-->
+  <!--    <span class="js-duration"></span>-->
+  <!--  </div>-->
 
   <div class="js-progress">
     <div class="js-progress-slider">Прогресс</div>
