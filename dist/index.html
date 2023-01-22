@@ -4,38 +4,81 @@
   <title>Вау! Видеоплеер!</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <style>
+    #player {
+      width: 800px;
+      height: 600px;
+    }
+
+    .js-video-container {
+      width: 100%;
+      height: 100%
+    }
+
+    .buttons {
+      background-color: black;
+    }
+
+    .js-play-button {
+      background-color: black;
+      border-style: none;
+      cursor: pointer
+    }
+
+    .js-pause-button {
+      background-color: black;
+      border-style: none;
+      cursor: pointer
+    }
+
+    .fa-play {
+      color: white;
+    }
+
+    .fa-pause {
+      color: white;
+    }
+
+    .js-progress {
+      background-color: grey;
+    }
+
+    .js-progress-slider {
+      background-color: darkseagreen;
+    }
+  </style>
 </head>
 <body>
-  <div id="player" style="width: 800px; height: 600px;">
-    <div class="js-video-container" style="width: 100%; height: 100%"></div>
-    <div style="background-color:black;">
-      <button class="js-play-button" style="background-color:black; border-style: none; cursor: pointer"><i style="color:white;" class="fa fa-play" aria-hidden="False"></i></button>
-      <button class="js-pause-button" style="background-color:black; border-style: none; cursor: pointer" hidden><i style="color:white;" class="fa fa-pause" aria-hidden="true"></i></button>
-<!--      <button class="js-volume-button" hidden>Volume</button>-->
-<!--      <button class="js-mute-button" >Mute</button>-->
-<!--      <button class="js-fullscreen-button" >Fullscreen</button>-->
-    </div>
-    <div style="color: white;">
-      <span class="js-current-time"></span>
-      —
-      <span class="js-duration"></span>
-    </div>
-
-    <div class="js-progress" style="background-color: grey;">
-      <div class="js-progress-slider" style="background-color: darkseagreen;">Прогресс</div>
-    </div>
+<div id="player">
+  <div class="js-video-container"></div>
+  <div class="buttons">
+    <button class="js-play-button"><i class="fa fa-play" aria-hidden="False"></i></button>
+    <button class="js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
+    <!--      <button class="js-volume-button" hidden>Volume</button>-->
+    <!--      <button class="js-mute-button" >Mute</button>-->
+    <!--      <button class="js-fullscreen-button" >Fullscreen</button>-->
+  </div>
+  <div style="color: white;">
+    <span class="js-current-time"></span>
+    —
+    <span class="js-duration"></span>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
-  <script src="player.js"></script>
+  <div class="js-progress">
+    <div class="js-progress-slider">Прогресс</div>
+  </div>
+</div>
 
-  <script type="text/javascript">
-    createPlayer({
-      elementId: 'player',
-      src: 'https://dvmn.org/media/filer_public/78/db/78db3456-3fd3-4504-9ed9-d2d1fd843c0b/highest_peak.mp4',
-    });
-  </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+<script src="player.js"></script>
+
+<script type="text/javascript">
+  createPlayer({
+    elementId: 'player',
+    src: 'https://dvmn.org/media/filer_public/78/db/78db3456-3fd3-4504-9ed9-d2d1fd843c0b/highest_peak.mp4',
+  });
+</script>
 
 </body>
 </html>
