@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="icon" sizes="16x16" href="favicon.png">
   <style>
-    #player {
+    .custom-vp {
       width: 800px;
       height: 600px;
       box-shadow: 1px 1px 15px 5px gray;
@@ -16,7 +16,7 @@
       align-items: stretch;
     }
 
-    .js-video-container {
+    .vp-container {
       flex-grow: 1;
     }
 
@@ -28,49 +28,47 @@
       flex-grow: 1;
     }
 
-    .js-play-button, .js-pause-button, .js-volume-button, .js-mute-button, .js-fullscreen-button {
+    .vp-button {
+      color: white;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
       background-color: black;
       border-style: none;
       cursor: pointer;
-      margin: 10px 5px;
+      height: 35px;
+      width: 35px;
     }
 
-    .fa-play, .fa-pause, .fa-volume-up, .fa-volume-off, .fa-expand {
-      color: white;
-      font-size: 2em;
-    }
-
-    .js-progress {
+    .vp-progress {
       background-color: grey;
     }
 
-    .js-progress-slider {
+    .vp-progress-slider {
       background-color: darkseagreen;
-    }
-
-    .js-progress-slider{
       color: burlywood;
     }
+
   </style>
 </head>
 <body>
-<div id="player">
-  <div class="js-video-container"></div>
+<div id="player" class="custom-vp">
+  <div class="js-video-container vp-container"></div>
   <div class="buttons">
-    <button class="js-play-button"><i class="fa fa-play" aria-hidden="False"></i></button>
-    <button class="js-pause-button"><i class="fa fa-pause" aria-hidden="true"></i></button>
-    <button class="js-volume-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-    <button class="js-mute-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+    <button class="js-play-button vp-button"><i class="fa fa-play" aria-hidden="true"></i></button>
+    <button class="js-pause-button vp-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
+    <button class="js-volume-button vp-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+    <button class="js-mute-button vp-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
     <div class="space-between-buttons" ></div>
-    <button class="js-fullscreen-button" ><i class="fa fa-expand" aria-hidden="true"></i></button>
+    <button class="js-fullscreen-button vp-button" ><i class="fa fa-expand" aria-hidden="true"></i></button>
   </div>
 <!--    <div style="color: black;">-->
 <!--      <span class="js-current-time"></span>-->
 <!--      <span class="js-duration"></span>-->
 <!--    </div>-->
 
-  <div class="js-progress">
-    <div class="js-progress-slider">Прогресс</div>
+  <div class="js-progress vp-progress">
+    <div class="js-progress-slider vp-progress-slider">Прогресс</div>
   </div>
 </div>
 
