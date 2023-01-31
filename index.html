@@ -60,18 +60,35 @@
       flex-grow: 1;
     }
 
-    .space-between-buttons{
-      flex-grow: 1;
-    }
-
-
     .vp-progress {
-      background-color: grey;
+      background-color: black;
+      display: flex;
+      flex-grow: 1;
+      padding: 5px;
+
     }
 
     .vp-progress-slider {
-      background-color: darkseagreen;
-      color: burlywood;
+      height: 5px;
+      background-color: #f8104d;
+      color: black;
+      border-radius: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: -10px;
+      display: flex;
+
+    }
+
+    .vp-progress-point {
+      height: 7px;
+      width: 7px;
+      background-color: red;
+      border-color: white;
+      border-style: solid;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
     }
 
   </style>
@@ -88,18 +105,15 @@
     </div>
     <div class="viewing-panel">
       <div class="js-current-time vp-time"></div>
-      <div></div>
-      <div class= Add timer block."space-between-buttons"></div>
+      <div class="js-progress vp-progress">
+        <div class="js-progress-slider vp-progress-slider"></div>
+        <div class="vp-progress-point"></div>
+      </div>
       <div class="js-duration vp-time"></div>
     </div>
     <div class="player-button">
       <button class="js-fullscreen-button vp-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
     </div>
-  </div>
-
-
-  <div class="js-progress vp-progress">
-    <div class="js-progress-slider vp-progress-slider">Прогресс</div>
   </div>
 </div>
 
