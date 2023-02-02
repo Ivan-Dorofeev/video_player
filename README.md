@@ -5,6 +5,9 @@
 Ссылка на пример:
 ***[Видеоплеер](https://ivan-dorofeev.github.io/video_player/)***
 
+![image](https://user-images.githubusercontent.com/58893102/216325446-991ab5ed-a46b-4b09-bca6-5f07e87ff362.png)
+
+
 Построен на базе библиотеки [Playable](https://wix.github.io/playable/).
 
 ## Как подключить
