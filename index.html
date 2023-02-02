@@ -3,12 +3,14 @@
 <head>
   <title>Вау! Видеоплеер!</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="icon" sizes="16x16" href="favicon.png">
   <style>
+
     .custom-vp {
       width: 800px;
       height: 620px; /*600*/
@@ -42,6 +44,17 @@
       align-items: center;
       justify-content: center;
       padding-bottom: 5px;
+    }
+
+    .vp-button:focus {
+      color: white;
+      font-size: 20px;
+      align-items: center;
+      background-color: black;
+      border-style: none;
+      cursor: pointer;
+      height: 35px;
+      width: 35px;
     }
 
     .vp-button {
