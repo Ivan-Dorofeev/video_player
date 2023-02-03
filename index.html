@@ -3,120 +3,13 @@
 <head>
   <title>Вау! Видеоплеер!</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="icon" sizes="16x16" href="favicon.png">
-  <style>
-
-    .custom-vp {
-      width: 800px;
-      height: 620px; /*600*/
-      box-shadow: 1px 1px 15px 5px gray;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: stretch;
-    }
-
-    .vp-container {
-      flex-grow: 1;
-      width: 800px;
-      height: 600px;
-    }
-
-    .viewing-panel{
-      font-family: 'Roboto', sans-serif;
-      display: flex;
-      align-items: center;
-      background-color: black;
-    }
-
-    .vp-time{
-      color: white;
-    }
-
-    .vp-bottom-controls {
-      background-color: black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 5px;
-    }
-
-    .vp-button:focus {
-      color: white;
-      font-size: 20px;
-      align-items: center;
-      background-color: black;
-      border-style: none;
-      cursor: pointer;
-      height: 35px;
-      width: 35px;
-    }
-
-    .vp-button {
-      color: white;
-      font-size: 20px;
-      align-items: center;
-      background-color: black;
-      border-style: none;
-      cursor: pointer;
-      height: 35px;
-      width: 35px;
-    }
-
-
-    .viewing-panel {
-      flex-grow: 1;
-    }
-
-    .vp-progress {
-      background-color: black;
-      display: flex;
-      flex-grow: 1;
-      /*padding: 5px;*/
-      margin-left: 10px;
-    }
-
-    .vp-progress-point {
-      opacity: 1;
-      transition-property: all;
-      transition-duration: 300ms;
-      transition-timing-function: ease-in-out;
-    }
-
-    .vp-progress:hover .vp-progress-point {
-      height: 7px;
-      width: 7px;
-      margin-left: -5px;
-      background-color: red;
-      border-color: white;
-      border-style: solid;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      transition-property: all;
-      transition-duration: 300ms;
-      transition-timing-function: ease-in-out;
-    }
-
-    .vp-progress-slider {
-      height: 5px;
-      background-color: #f8104d;
-      color: black;
-      border-radius: 5px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      display: flex;
-
-    }
-
-
-
-  </style>
 </head>
 <body>
 <div id="player" class="custom-vp">

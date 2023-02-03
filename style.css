@@ -1,0 +1,105 @@
+.custom-vp {
+  width: 800px;
+  height: 620px; /*600*/
+  box-shadow: 1px 1px 15px 5px gray;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.vp-container {
+  flex-grow: 1;
+  width: 800px;
+  height: 600px;
+}
+
+.viewing-panel {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.vp-time {
+  color: white;
+}
+
+.vp-bottom-controls {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.vp-button:focus {
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  background-color: black;
+  border-style: none;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
+
+.vp-button {
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  background-color: black;
+  border-style: none;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
+
+
+.viewing-panel {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.vp-progress {
+  background-color: black;
+  display: flex;
+  flex-grow: 1;
+  margin-left: 10px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.vp-progress-point {
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.vp-progress:hover .vp-progress-point {
+  height: 7px;
+  width: 7px;
+  margin-left: -5px;
+  background-color: red;
+  border-color: white;
+  border-style: solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.vp-progress-slider {
+  height: 5px;
+  background-color: #f8104d;
+  color: black;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+
+}
